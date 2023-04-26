@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        box-sizing: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e9e9e9;
+      }
+      form {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;width: auto;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        background: #ffffff;
+        padding: 30px 30px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 25px 0px #000000;
+      }
+      form > div {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      form > h1 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+      }
+      form > p {
+        margin-bottom: 20px;
+        color: rgb(77, 77, 77);
+        font-size: 1.2rem;
+      }
+      form > div > label {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+      form > div > input {
+        height: 35px;
+        font-size: 1.2rem;
+        padding-left: 10px;
+      }
+      form > button {
+        padding: 10px 20px;
+        border-radius: 10px 20px;
+        border: none;
+        color: white;
+        font-size: 1.3rem;
+        background: #39ca0d;
+      }
+      form > button:hover {
+        background: #289706;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/register" method="post">
+      <h1>Novo Produto</h1>
+      <p>Preencha com os detalhes do Produto</p>
+      <div>
+        <label for="">Produto:</label>
+        <input required type="text" name="product" id="" placeholder="Nome do Produto" />
+      </div>
+      <div>
+        <label for="">Imagem:</label>
+        <input required type="text" name="image" id="" placeholder="Link da Imagem" />
+      </div>
+      <div>
+        <label for="">Descrição:</label>
+        <input required type="text" name="description" id="" placeholder="Descrição" />
+      </div>
+      <div>
+        <label for="">Link do Ativo</label>
+        <input required type="text" name="link" id="" placeholder="Desvio" />
+      </div>
+      <button type="submit">Adicionar Produto</button>
+    </form>
+  </body>
+</html>
